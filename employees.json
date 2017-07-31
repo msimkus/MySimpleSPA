@@ -1,0 +1,34 @@
+{
+  "employees": [
+    {
+      "id":1,
+      "name":"John",
+      "age":21,
+      "salary":1100
+    },
+    {
+      "id":2,
+      "name":"George",
+      "age":22,
+      "salary":1200
+    },
+    {
+      "id":3,
+      "name":"Jessica",
+      "age":23,
+      "salary":1300
+    },
+    {
+      "id":4,
+      "name":"Steve",
+      "age":24,
+      "salary":1400
+    },
+    {
+      "id":5,
+      "name":"Britney",
+      "age":25,
+      "salary":1500
+    }
+  ]
+}
