@@ -11,25 +11,18 @@
 		<h3>Employees</h3>
 		<ul>
 			<li ng-repeat="employee in employees">
-				{{ employee.name }}
+				<a ng-href="#/details/{{ employee.id }}">
+					{{ employee.name }}
+				</a>
 			</li>
 		</ul>
+
+		<div ng-view></div>
 
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
-	<script type="text/javascript">
-	var app = angular.module("myApp", []);
-	app.controller("myCtrl", function($scope, $http) {
-		$http.get("employees.json")
-		.then(function(response) {
-			$scope.employees = response.data.employees;
-		})
-		.catch(function(data) {
-			alert("Data could not be loaded...");
-		});
-	});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
